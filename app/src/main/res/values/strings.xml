@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Investigação de plantas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nome_acervo">Acervo</string>
+    <string name="texto_descricao_atividade_1">
+        Os organismos do Reino Plantae colonizam os mais variados ambientes.
+        Eles possuem importante papel na sucessão ecológica e na manutenção das condições de vida do nosso planeta.
+        \n\nA atividade a seguir consiste em identificar organismos do Reino Plantae existentes no ambiente por meio de
+        fotografias.
+    </string>
+    <string name="texto_descricao_atividade_2">
+        Esta chave dicotômica é uma simplificação e serve para descobrir os grandes grupos de plantas.
+        Mas como em biologia há sempre alguém ou alguma coisa para nos desmentir, há plantas que podem não se enquadrar nessa classificação simplista.
+    </string>
+    <string name="resposta_1a">1a. Plantas de minúsculas (até 10 cm) --> 2</string>
+    <string name="resposta_1b">1b. Plantas de médio e grande porte ---> 3</string>
+    <string name="resposta_2a">2a. Possui rizóide, caulóide e filóide --> Briófita</string>
+    <string name="resposta_2b">2b. Possui raiz, caule e folha --> 3</string>
+    <string name="resposta_3a">3a. Possui sementes --> 5</string>
+    <string name="resposta_3b">3b. Não possui sementes --> 4</string>
+    <string name="resposta_4a">4a. Possui soros na parte inferior da folha --> Pteridófita</string>
+    <string name="resposta_4b">4b. Não possui soros na parte inferior da folha --> 5</string>
+    <string name="resposta_5a">5a. Possui flores e frutos --> Angiosperma</string>
+    <string name="resposta_5b">5b. Possui estróbilo --> Gimnosperma</string>
+</resources>

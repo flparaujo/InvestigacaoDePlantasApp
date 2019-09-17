@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGreen"
+    tools:context=".fragments.atividade1.plantae.EtapaReinoPlantaeEFragment">
+
+    <TextView
+        android:id="@+id/pergunta_1e"
+        style="@style/TextoExibicao"
+        android:text="Procure conversar com as pessoas que vivem neste ambiente e descubra se já existiram plantas nesta área."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pesquisa_plantas_que_ja_existiram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pesquisa_plantas_que_ja_existiram"
+        style="@style/CaixaTexto"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@id/button_next1e"
+        app:layout_constraintDimensionRatio="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pergunta_1e" />
+
+    <Button
+        android:id="@+id/button_next1e"
+        style="@style/BotaoProxima"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

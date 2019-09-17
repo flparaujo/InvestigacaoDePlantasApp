@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGreen"
+    tools:context=".fragments.atividade1.FinalizacaoAtividade1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoExibicao"
+            android:text="Tarefa finalizada!"/>
+
+        <Button
+            android:id="@+id/button_compartilhar_tarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_next_rounded"
+            android:drawableLeft="?attr/actionModeShareDrawable"
+            android:drawableTint="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Compartilhar Tarefa"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_finalizar_tarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_next_rounded"
+            android:drawableLeft="@drawable/ic_done_white_24dp"
+            android:drawableTint="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Sair"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

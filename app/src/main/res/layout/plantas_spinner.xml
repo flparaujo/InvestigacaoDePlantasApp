@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:outlineSpotShadowColor="@color/colorPrimaryDark"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imagem_planta"
+        android:layout_width="@dimen/spinner_img_w"
+        android:layout_height="@dimen/spinner_img_h"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+</LinearLayout>

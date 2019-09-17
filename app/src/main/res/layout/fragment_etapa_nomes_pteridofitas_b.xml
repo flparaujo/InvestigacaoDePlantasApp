@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGreen"
+    tools:context=".fragments.atividade1.pteridofitas.EtapaNomesPteridofitasBFragment">
+
+
+    <TextView
+        android:id="@+id/pergunta_4b"
+        style="@style/TextoExibicao"
+        android:text="Pesquise as espécies que formam as pteridófitas."
+        app:layout_constraintBottom_toTopOf="@id/link_pesquisa_nomes_pteridofitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pesquisa_nomes_pteridofitas"
+        style="@style/TextoLink"
+        android:id="@+id/link_pesquisa_nomes_pteridofitas"
+        android:text="Clique aqui para pesquisar"
+        app:layout_constraintTop_toBottomOf="@id/pergunta_4b"/>
+
+
+    <EditText
+        android:id="@+id/pesquisa_nomes_pteridofitas"
+        style="@style/CaixaTexto"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@id/button_next4b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/link_pesquisa_nomes_pteridofitas" />
+
+    <Button
+        android:id="@+id/button_next4b"
+        style="@style/BotaoProxima"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

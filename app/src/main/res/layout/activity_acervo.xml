@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/paleGreen"
+    tools:context=".activities.AcervoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/acervo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:title="Acervo"
+        app:titleTextColor="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ToolBarTheme"/>
+
+    <ListView
+        android:id="@+id/lista_acervo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="8.0sp"
+        />
+
+</LinearLayout>

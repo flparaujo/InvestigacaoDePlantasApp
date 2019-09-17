@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGreen"
+    tools:context=".fragments.atividade1.angiospermas.EtapaAngiospermasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextoExibicao"
+            android:text="Existem angiospermas no ambiente?" />
+
+        <TextView
+            style="@style/TextoLink"
+            android:id="@+id/link_pesquisa_angiospermas"
+            android:text="Saiba mais sobre as angiospermas aqui"/>
+
+        <Button
+            android:background="@drawable/btn_yes_rounded"
+            android:id="@+id/button_sim6"
+            style="@style/BotaoResposta"
+            android:text="SIM" />
+
+        <Button
+            android:background="@drawable/btn_no_rounded"
+            android:id="@+id/button_nao6"
+            style="@style/BotaoResposta"
+            android:text="NÃO" />
+
+    </LinearLayout>
+
+</FrameLayout>

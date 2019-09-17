@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.atividade2.Pergunta2Fragment">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/imagem_pergunta2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/alternativa_2a"
+        android:layout_width="@dimen/atv2_img_w"
+        android:layout_height="@dimen/atv2_img_h"
+        android:src="@drawable/angiosperma_1"/>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagem_pergunta2"
+        android:id="@+id/alternativa_2a"
+        style="@style/TextoPerguntaAtividade2"
+        android:text="@string/resposta_2a"/>
+    <Button
+        android:id="@+id/goto_resultado_briofita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alternativa_2a"
+        app:layout_constraintBottom_toTopOf="@+id/alternativa_2b"
+        style="@style/BotaoAzulAtividade2"
+        android:text="Briófita"/>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goto_resultado_briofita"
+        app:layout_constraintBottom_toTopOf="@id/goto_pergunta_3"
+        android:id="@+id/alternativa_2b"
+        style="@style/TextoPerguntaAtividade2"
+        android:text="@string/resposta_2b"/>
+    <Button
+        android:id="@+id/goto_pergunta_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alternativa_2b"
+        style="@style/BotaoVermelhoAtividade2"
+        android:text="3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

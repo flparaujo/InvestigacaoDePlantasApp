@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/paleGreen"
+    tools:context=".fragments.atividade1.angiospermas.EtapaAngiospermasA1Fragment">
+
+
+        <TextView
+            android:id="@+id/pergunta_6a1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/TextoExibicao"
+            android:text="Identifique e fotografe as estruturas reprodutivas das Angiospermas: flores." />
+
+        <ImageView
+            app:layout_constraintBottom_toTopOf="@id/button_next6a1"
+            app:layout_constraintDimensionRatio="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pergunta_6a1"
+            android:id="@+id/image_flores"
+            style="@style/IconeFoto" />
+
+        <Button
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/BotaoProxima"
+            android:id="@+id/button_next6a1"
+            />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spinner_img_h">290dp</dimen>
+    <dimen name="spinner_img_w">290dp</dimen>
+    <dimen name="atv2_img_h">480dp</dimen>
+    <dimen name="atv2_img_w">480dp</dimen>
+    <dimen name="foto_icone_h">480dp</dimen>
+    <dimen name="foto_icone_w">480dp</dimen>
+    <dimen name="foto_w">480dp</dimen>
+    <dimen name="foto_h">640dp</dimen>
+    <dimen name="pdf_text_size">39px</dimen>
+    <dimen name="tamanho_icone_mp_1">99dp</dimen>
+    <dimen name="tamanho_icone_mp_2">66dp</dimen>
+    <dimen name="tamanho_icone_app_mp">250dp</dimen>
+    <dimen name="tamanho_texto_titulo_app">38sp</dimen>
+    <dimen name="logo_w">320dp</dimen>
+    <dimen name="logo_h">70dp</dimen>
+    <dimen name="logo_margin_bottom">12dp</dimen>
+    <dimen name="foto_margin_bottom">50dp</dimen>
+    <dimen name="tamanho_texto_1">24sp</dimen>
+    <dimen name="tamanho_texto_2">25sp</dimen>
+    <dimen name="tamanho_texto_3">19sp</dimen>
+</resources>
