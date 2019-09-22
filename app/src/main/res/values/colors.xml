@@ -6,7 +6,8 @@
     <color name="paleGreen">#F4FEF4</color>
     <color name="black">#000</color>
     <color name="lightGreen">#b8f5bf</color>
-    <color name="colorPlaceholder">#44ffffff</color>
+    <color name="colorPlaceholder">#88ffffff</color>
+    <color name="color2Placeholder">#88F4FEF4</color>
     <color name="white">#fff</color>
     <color name="cyanLink">#007f7f</color>
 </resources>

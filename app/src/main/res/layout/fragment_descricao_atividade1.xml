@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/paleGreen"
     tools:context=".fragments.atividade1.DescricaoAtividade1Fragment">
 
     <TextView
         android:id="@+id/titulo_atividade_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorPlaceholder"
         android:padding="15dp"
         android:text="ATIVIDADE 1: Fotoidentificação dos grupos do Reino Plantae."
         android:textAlignment="textStart"
@@ -35,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
+        android:background="@color/colorPlaceholder"
         android:text="@string/texto_descricao_atividade_1"
         android:textAlignment="textStart"
         android:textColor="@color/colorPrimaryDark"

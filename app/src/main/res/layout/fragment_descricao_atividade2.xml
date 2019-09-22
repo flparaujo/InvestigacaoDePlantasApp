@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/paleGreen"
     android:orientation="vertical"
     tools:context=".fragments.atividade2.DescricaoAtividade2Fragment">
 
@@ -13,6 +12,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/descricao_atividade_2"
+        android:background="@color/colorPlaceholder"
         android:padding="15dp"
         android:id="@+id/titulo_atividade_2"
         android:layout_width="wrap_content"
@@ -28,6 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titulo_atividade_2"
         android:paddingLeft="15dp"
+        android:background="@color/colorPlaceholder"
         android:id="@+id/descricao_atividade_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +39,7 @@
     <TextView
         android:padding="15dp"
         android:id="@+id/texto_escolher_planta"
+        android:background="@color/colorPlaceholder"
         app:layout_constraintTop_toBottomOf="@id/descricao_atividade_2"
         android:textColor="@color/colorPrimaryDark"
         android:layout_width="match_parent"
@@ -58,6 +60,7 @@
     <TextView
         android:padding="15dp"
         android:id="@+id/texto_iniciar_atividade"
+        android:background="@color/colorPlaceholder"
         app:layout_constraintTop_toBottomOf="@id/spinner"
         android:textColor="@color/colorPrimaryDark"
         android:layout_width="match_parent"

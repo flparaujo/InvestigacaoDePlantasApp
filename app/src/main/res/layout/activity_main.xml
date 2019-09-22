@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/paleGreen"
+    android:background="@drawable/background_2"
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
@@ -27,6 +27,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/color2Placeholder"
             android:text="@string/app_name"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/tamanho_texto_titulo_app"
