@@ -41,6 +41,8 @@ public class EtapaPlantaDesconhecidaFragment extends Fragment {
             EtapaPlantaDesconhecidaAFragment etapaPlantaDesconhecidaAFragment = new EtapaPlantaDesconhecidaAFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaPlantaDesconhecidaAFragment)
                     .addToBackStack("Questao 7")
                     .commit();
@@ -52,6 +54,8 @@ public class EtapaPlantaDesconhecidaFragment extends Fragment {
             FinalizacaoAtividade1Fragment finalizacaoAtividade1Fragment = new FinalizacaoAtividade1Fragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, finalizacaoAtividade1Fragment)
                     .addToBackStack("Questao 7")
                     .commit();

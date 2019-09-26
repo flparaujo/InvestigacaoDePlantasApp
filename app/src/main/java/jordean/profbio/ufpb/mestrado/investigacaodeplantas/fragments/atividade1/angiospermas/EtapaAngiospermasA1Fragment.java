@@ -42,7 +42,6 @@ public class EtapaAngiospermasA1Fragment extends TelaFotoFragment {
         fotoIdentificacaoModel = ViewModelProviders.of(requireActivity()).get(FotoIdentificacaoModel.class);
         fotoIdentificacaoModel.setFotoFlores(null);
 
-
         imageFlores = view.findViewById(R.id.image_flores);
 
         imageFlores.setOnClickListener(v -> openCamera(CAMERA_ACTION_PICK_REQUEST_CODE_1));
@@ -53,6 +52,8 @@ public class EtapaAngiospermasA1Fragment extends TelaFotoFragment {
             EtapaPlantaDesconhecidaFragment etapaPlantaDesconhecidaFragment = new EtapaPlantaDesconhecidaFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaPlantaDesconhecidaFragment)
                     .addToBackStack("Questao 6a1")
                     .commit();

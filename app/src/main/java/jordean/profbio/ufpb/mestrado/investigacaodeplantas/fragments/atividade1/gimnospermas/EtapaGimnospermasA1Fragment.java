@@ -51,6 +51,8 @@ public class EtapaGimnospermasA1Fragment extends TelaFotoFragment {
             EtapaAngiospermasFragment etapaAngiospermasFragment = new EtapaAngiospermasFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaAngiospermasFragment)
                     .addToBackStack("Questao 5a1")
                     .commit();

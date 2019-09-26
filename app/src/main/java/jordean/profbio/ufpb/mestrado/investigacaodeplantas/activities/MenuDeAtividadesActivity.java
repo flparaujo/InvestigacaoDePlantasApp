@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import jordean.profbio.ufpb.mestrado.investigacaodeplantas.R;
@@ -37,15 +38,37 @@ public class MenuDeAtividadesActivity extends AppCompatActivity {
             switch (position) {
                 case 0:
                     startActivity(new Intent(MenuDeAtividadesActivity.this, FotoIdentificacaoActivity.class));
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     finish();
                     break;
                 case 1:
                     startActivity(new Intent(MenuDeAtividadesActivity.this, ChaveIdentificacaoGrupoPlantaActivity.class));
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     finish();
                     break;
                 default:
                     break;
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 }

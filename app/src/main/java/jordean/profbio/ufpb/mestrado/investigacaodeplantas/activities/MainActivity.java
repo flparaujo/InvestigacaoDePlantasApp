@@ -7,6 +7,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.transition.Slide;
 
 import com.avast.android.dialogs.fragment.SimpleDialogFragment;
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         botaoAtividades.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, MenuDeAtividadesActivity.class));
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });
 
         botaoQuestoes.setOnClickListener(v -> {
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         botaoAcervo.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, AcervoActivity.class));
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });
 
         avaliarApp.setOnClickListener(v -> {

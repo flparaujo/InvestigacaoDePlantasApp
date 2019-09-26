@@ -41,6 +41,8 @@ public class Pergunta3Fragment extends Fragment {
 
             Pergunta5Fragment pergunta5Fragment = new Pergunta5Fragment();
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.card_flip_right_in, R.anim.card_flip_left_out,
+                            R.anim.card_flip_left_in, R.anim.card_flip_right_out)
                     .replace(R.id.fragment_container1, pergunta5Fragment)
                     .addToBackStack("Pergunta 3")
                     .commit();
@@ -51,6 +53,8 @@ public class Pergunta3Fragment extends Fragment {
 
             Pergunta4Fragment pergunta4Fragment = new Pergunta4Fragment();
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.card_flip_right_in, R.anim.card_flip_left_out,
+                            R.anim.card_flip_left_in, R.anim.card_flip_right_out)
                     .replace(R.id.fragment_container1, pergunta4Fragment)
                     .addToBackStack("Pergunta 3")
                     .commit();

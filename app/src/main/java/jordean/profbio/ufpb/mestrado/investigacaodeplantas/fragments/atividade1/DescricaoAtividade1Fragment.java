@@ -29,6 +29,7 @@ public class DescricaoAtividade1Fragment extends Fragment {
 
 
     private Button botaoIniciar;
+
     private static final String[] PERMISSIONS = {
             ACCESS_NETWORK_STATE,
             INTERNET,
@@ -58,6 +59,7 @@ public class DescricaoAtividade1Fragment extends Fragment {
                 EtapaReinoPlantaeFragment etapaReinoPlantaeFragment = new EtapaReinoPlantaeFragment();
 
                 requireActivity().getSupportFragmentManager().beginTransaction()
+                        .setCustomAnimations(R.anim.slide_down, R.anim.slide_up)
                         .replace(R.id.fragment_container, etapaReinoPlantaeFragment)
                         .commit();
             }

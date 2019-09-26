@@ -80,6 +80,8 @@ public class EtapaPteridofitasBFragment extends Fragment {
         EtapaGimnospermasFragment etapaGimnospermasFragment = new EtapaGimnospermasFragment();
 
         requireActivity().getSupportFragmentManager().beginTransaction()
+                .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                 .replace(R.id.fragment_container, etapaGimnospermasFragment)
                 .addToBackStack("Questao 3b")
                 .commit();
@@ -89,9 +91,12 @@ public class EtapaPteridofitasBFragment extends Fragment {
         EtapaNomesPteridofitasBFragment etapaNomesPteridofitasBFragment = new EtapaNomesPteridofitasBFragment();
 
         requireActivity().getSupportFragmentManager().beginTransaction()
+                .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                 .replace(R.id.fragment_container, etapaNomesPteridofitasBFragment)
                 .addToBackStack("Questao 3b")
                 .commit();
     }
+    
 
 }

@@ -46,6 +46,8 @@ public class EtapaReinoPlantaeEFragment extends Fragment {
             EtapaBriofitasBFragment etapaBriofitasBFragment = new EtapaBriofitasBFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaBriofitasBFragment)
                     .addToBackStack("Questao 1e")
                     .commit();

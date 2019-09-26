@@ -39,6 +39,8 @@ public class EtapaBriofitasFragment extends Fragment {
             EtapaBriofitasAFragment etapaBriofitasAFragment = new EtapaBriofitasAFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaBriofitasAFragment)
                     .addToBackStack("Questao 2")
                     .commit();
@@ -50,6 +52,8 @@ public class EtapaBriofitasFragment extends Fragment {
             EtapaBriofitasBFragment etapaBriofitasBFragment = new EtapaBriofitasBFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaBriofitasBFragment)
                     .addToBackStack("Questao 2")
                     .commit();

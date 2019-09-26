@@ -44,6 +44,8 @@ public class EtapaReinoPlantaeFragment extends Fragment {
             EtapaReinoPlantaeAFragment etapaReinoPlantaeAFragment = new EtapaReinoPlantaeAFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaReinoPlantaeAFragment)
                     .addToBackStack("Questao 1")
                     .commit();
@@ -55,6 +57,8 @@ public class EtapaReinoPlantaeFragment extends Fragment {
             EtapaReinoPlantaeBFragment etapaReinoPlantaeBFragment = new EtapaReinoPlantaeBFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaReinoPlantaeBFragment)
                     .addToBackStack("Questao 1")
                     .commit();

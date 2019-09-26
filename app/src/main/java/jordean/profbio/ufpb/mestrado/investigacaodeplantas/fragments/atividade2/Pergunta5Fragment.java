@@ -61,6 +61,8 @@ public class Pergunta5Fragment extends Fragment {
     private void gotoFinalAtividade2() {
         FinalizacaoAtividade2Fragment finalizacaoAtividade2Fragment = new FinalizacaoAtividade2Fragment();
         requireActivity().getSupportFragmentManager().beginTransaction()
+                .setCustomAnimations(R.anim.card_flip_right_in, R.anim.card_flip_left_out,
+                        R.anim.card_flip_left_in, R.anim.card_flip_right_out)
                 .replace(R.id.fragment_container1, finalizacaoAtividade2Fragment)
                 .addToBackStack("Pergunta 5")
                 .commit();

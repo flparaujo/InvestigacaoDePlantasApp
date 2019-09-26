@@ -80,6 +80,7 @@ public class DescricaoAtividade2Fragment extends Fragment {
             } else {
                 Pergunta1Fragment pergunta1Fragment = new Pergunta1Fragment();
                 requireActivity().getSupportFragmentManager().beginTransaction()
+                        .setCustomAnimations(R.anim.slide_down, R.anim.slide_up)
                         .replace(R.id.fragment_container1, pergunta1Fragment)
                         .addToBackStack("Descricao 2")
                         .commit();

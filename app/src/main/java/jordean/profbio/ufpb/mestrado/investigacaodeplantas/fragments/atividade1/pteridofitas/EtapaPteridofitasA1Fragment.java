@@ -49,6 +49,8 @@ public class EtapaPteridofitasA1Fragment extends TelaFotoFragment {
         proxima.setOnClickListener(v -> {
             EtapaNomesPteridofitasFragment etapaNomesPteridofitasFragment = new EtapaNomesPteridofitasFragment();
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaNomesPteridofitasFragment)
                     .addToBackStack("Questao 3a1")
                     .commit();

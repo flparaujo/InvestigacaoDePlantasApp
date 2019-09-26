@@ -52,6 +52,8 @@ public class EtapaPlantaDesconhecidaAFragment extends TelaFotoFragment {
             EtapaPlantaDesconhecidaA1Fragment etapaPlantaDesconhecidaA1Fragment = new EtapaPlantaDesconhecidaA1Fragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaPlantaDesconhecidaA1Fragment)
                     .addToBackStack("Questao 7a")
                     .commit();

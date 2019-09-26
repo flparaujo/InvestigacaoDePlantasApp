@@ -44,6 +44,8 @@ public class EtapaReinoPlantaeBFragment extends Fragment {
             EtapaReinoPlantaeDFragment etapaReinoPlantaeDFragment = new EtapaReinoPlantaeDFragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaReinoPlantaeDFragment)
                     .addToBackStack("Questao 1b")
                     .commit();

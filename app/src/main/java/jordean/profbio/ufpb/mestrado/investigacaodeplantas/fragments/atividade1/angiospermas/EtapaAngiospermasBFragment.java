@@ -62,6 +62,8 @@ public class EtapaAngiospermasBFragment extends Fragment {
 
             FinalizacaoAtividade1Fragment finalizacaoAtividade1Fragment = new FinalizacaoAtividade1Fragment();
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, finalizacaoAtividade1Fragment)
                     .addToBackStack("Questao 6b")
                     .commit();

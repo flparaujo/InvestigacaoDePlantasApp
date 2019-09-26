@@ -50,6 +50,8 @@ public class EtapaGimnospermasAFragment extends TelaFotoFragment {
             EtapaGimnospermasA1Fragment etapaGimnospermasA1Fragment = new EtapaGimnospermasA1Fragment();
 
             requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                            R.anim.slide_in_left, R.anim.slide_out_right)
                     .replace(R.id.fragment_container, etapaGimnospermasA1Fragment)
                     .addToBackStack("Questao 5a")
                     .commit();
