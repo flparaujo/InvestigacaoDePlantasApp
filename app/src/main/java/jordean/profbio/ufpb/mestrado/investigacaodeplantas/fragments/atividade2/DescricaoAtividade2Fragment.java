@@ -22,17 +22,18 @@ import android.widget.Toast;
 import jordean.profbio.ufpb.mestrado.investigacaodeplantas.R;
 import jordean.profbio.ufpb.mestrado.investigacaodeplantas.adapter.PlantasAdapter;
 import jordean.profbio.ufpb.mestrado.investigacaodeplantas.ui.model.ChaveIdentificacaoModel;
+import jordean.profbio.ufpb.mestrado.investigacaodeplantas.util.AppStrings;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class DescricaoAtividade2Fragment extends Fragment {
 
-    private int imagensSpinner[] = {R.drawable.angiosperma_1_s, R.drawable.pteridofita_2_s, R.drawable.briofita_1_s,
+    private int[] imagensSpinner = {R.drawable.angiosperma_1_s, R.drawable.pteridofita_2_s, R.drawable.briofita_1_s,
             R.drawable.gimnosperma_2_s, R.drawable.angiosperma_2_s, R.drawable.pteridofita_1_s, R.drawable.briofita_2_s,
             R.drawable.gimnosperma_1_s};
 
-    private int imagensMaiores[] = {R.drawable.angiosperma_1, R.drawable.pteridofita_2, R.drawable.briofita_1,
+    private int[] imagensMaiores = {R.drawable.angiosperma_1, R.drawable.pteridofita_2, R.drawable.briofita_1,
             R.drawable.gimnosperma_2, R.drawable.angiosperma_2, R.drawable.pteridofita_1, R.drawable.briofita_2,
             R.drawable.gimnosperma_1};
 
@@ -71,7 +72,7 @@ public class DescricaoAtividade2Fragment extends Fragment {
         if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             botaoIniciar.setText("Solicitar Permissão de armazenamento");
         } else {
-            botaoIniciar.setText("Iniciar atividade");
+            botaoIniciar.setText(AppStrings.INICIAR_ATIVIDADE);
         }
 
         botaoIniciar.setOnClickListener(v -> {
@@ -100,7 +101,7 @@ public class DescricaoAtividade2Fragment extends Fragment {
 
         if(requestCode == 1) {
             if(ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                botaoIniciar.setText("Iniciar atividade");
+                botaoIniciar.setText(AppStrings.INICIAR_ATIVIDADE);
             } else {
                 Toast.makeText(requireContext(), "Você não permitiu que o app utilizasse o" +
                         " armazenamento externo", Toast.LENGTH_SHORT).show();

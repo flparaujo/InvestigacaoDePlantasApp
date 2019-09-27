@@ -1,26 +1,28 @@
 package jordean.profbio.ufpb.mestrado.investigacaodeplantas.fragments.atividade1;
 
 
-import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+
 import jordean.profbio.ufpb.mestrado.investigacaodeplantas.R;
 import jordean.profbio.ufpb.mestrado.investigacaodeplantas.fragments.atividade1.plantae.EtapaReinoPlantaeFragment;
+import jordean.profbio.ufpb.mestrado.investigacaodeplantas.util.AppStrings;
 
-import static android.Manifest.permission.*;
+import static android.Manifest.permission.ACCESS_NETWORK_STATE;
+import static android.Manifest.permission.CAMERA;
+import static android.Manifest.permission.INTERNET;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -49,7 +51,7 @@ public class DescricaoAtividade1Fragment extends Fragment {
         if(!hasPermissions(requireContext(), PERMISSIONS)){
             botaoIniciar.setText("Solicitar Permissões (câmera e armazenamento)");
         } else {
-            botaoIniciar.setText("Iniciar atividade");
+            botaoIniciar.setText(AppStrings.INICIAR_ATIVIDADE);
         }
 
         botaoIniciar.setOnClickListener(v -> {
@@ -88,7 +90,7 @@ public class DescricaoAtividade1Fragment extends Fragment {
 
         if(requestCode == 1) {
             if(hasPermissions(requireContext(), PERMISSIONS)) {
-                botaoIniciar.setText("Iniciar atividade");
+                botaoIniciar.setText(AppStrings.INICIAR_ATIVIDADE);
             } else {
                 Toast.makeText(requireContext(), "Você não permitiu que o app utilizasse a câmera e/ou" +
                         " o armazenamento externo", Toast.LENGTH_SHORT).show();

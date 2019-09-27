@@ -39,13 +39,13 @@ public class EtapaNomesPteridofitasBFragment extends Fragment {
         FotoIdentificacaoModel fotoIdentificacaoModel = ViewModelProviders.of(requireActivity()).get(FotoIdentificacaoModel.class);
         fotoIdentificacaoModel.setPesquisaEspeciesPteridofitas(null);
 
-        final String url = "https://www.google.com/search?q=especies+de+pteridofitas";
+        final String URL = "https://www.google.com/search?q=especies+de+pteridofitas";
 
         TextView link = view.findViewById(R.id.link_pesquisa_nomes_pteridofitas);
 
         link.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
+            intent.setData(Uri.parse(URL));
             PackageManager packageManager = getActivity().getPackageManager();
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent);

@@ -2,10 +2,10 @@ package jordean.profbio.ufpb.mestrado.investigacaodeplantas.fragments.atividade1
 
 
 import android.content.Intent;
-import android.graphics.Bitmap;
+/*import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
-import android.media.ExifInterface;
+import androidx.exifinterface.media.ExifInterface; */
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -25,7 +25,6 @@ import jordean.profbio.ufpb.mestrado.investigacaodeplantas.R;
 import jordean.profbio.ufpb.mestrado.investigacaodeplantas.ui.model.FotoIdentificacaoModel;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -35,8 +34,6 @@ public class FinalizacaoAtividade1Fragment extends Fragment {
 
     private static final int OFFSET = 50;
 
-    Button enviarEmail;
-    Button salvarESair;
     private FotoIdentificacaoModel fotoIdentificacaoModel;
 
     public FinalizacaoAtividade1Fragment() {
@@ -53,8 +50,8 @@ public class FinalizacaoAtividade1Fragment extends Fragment {
         //exibirResultado();
         /* TODO */
 
-        enviarEmail = view.findViewById(R.id.button_compartilhar_tarefa);
-        salvarESair = view.findViewById(R.id.button_finalizar_tarefa);
+        Button enviarEmail = view.findViewById(R.id.button_compartilhar_tarefa);
+        Button salvarESair = view.findViewById(R.id.button_finalizar_tarefa);
 
         enviarEmail.setOnClickListener(v -> {
             compartilharTarefa();
@@ -239,7 +236,7 @@ public class FinalizacaoAtividade1Fragment extends Fragment {
 
     }
 
-    private Bitmap loadImage(String path) {
+    /*private Bitmap loadImage(String path) {
         Uri uri = getFile(path);
         Bitmap bit = BitmapFactory.decodeFile(uri.getPath());
 
@@ -288,6 +285,6 @@ public class FinalizacaoAtividade1Fragment extends Fragment {
                 bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, false);
         //bitmap.recycle();
         return resizedBitmap;
-    }
+    } */
 
 }

@@ -102,17 +102,14 @@ public class CameraActivity extends AppCompatActivity {
                 setResult(-1, resultIntent); // OK!
                 Toast.makeText(CameraActivity.this, "Imagem salva em " + file.getAbsolutePath(), Toast.LENGTH_SHORT).show();
                 finish();
-                return;
             } catch (IOException e) {
                 setResult(1);
                 e.printStackTrace();
                 finish();
-                return;
             } catch (Exception exception) {
                 setResult(2);
                 exception.printStackTrace();
                 finish();
-                return;
             }
         };
     }

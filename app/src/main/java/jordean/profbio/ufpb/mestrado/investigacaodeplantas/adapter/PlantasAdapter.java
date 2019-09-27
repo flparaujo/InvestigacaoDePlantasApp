@@ -11,12 +11,10 @@ import jordean.profbio.ufpb.mestrado.investigacaodeplantas.R;
 
 public class PlantasAdapter extends BaseAdapter {
 
-    private Context context;
-    private int imagens[];
+    private int[] imagens;
     private LayoutInflater inflater;
 
     public PlantasAdapter(Context applicationContext, int[] imagens) {
-        this.context = applicationContext;
         this.imagens = imagens;
         inflater = (LayoutInflater.from(applicationContext));
     }
@@ -39,7 +37,7 @@ public class PlantasAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         convertView = inflater.inflate(R.layout.plantas_spinner, null);
-        ImageView icon = (ImageView) convertView.findViewById(R.id.imagem_planta);
+        ImageView icon = convertView.findViewById(R.id.imagem_planta);
         icon.setImageResource(imagens[position]);
         return convertView;
     }

@@ -289,4 +289,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:+'
     implementation 'androidx.constraintlayout:constraintlayout:+'
     implementation 'com.avast:android-styled-dialogs:2.3.3'
+    implementation 'androidx.exifinterface:exifinterface:1.1.0-alpha01'
 }
